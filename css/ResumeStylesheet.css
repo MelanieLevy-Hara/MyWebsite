@@ -1,0 +1,59 @@
+/*@font-face{
+    font-family: elephant;
+    src: url("../fonts/elephant.ttf");
+}*/
+body {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.transparent{
+    background-color: transparent;
+    width:780px;
+    height:90px;
+    padding-left:15px;
+}
+.transparent h3{
+    color: #68b4d5;
+    font-family: elephant;
+    font-size: 4em;
+    font-style: italic;
+}
+.transparent2{
+    height:20px;
+    width:420px;
+    background-color:transparent;
+}
+.theme-box1{
+    width:420px;
+    height:630px;
+    background: rgba(0,0,0,0.2);
+}
+.theme-box1 img{
+    width:90%;
+    height: 90%;
+    margin: 5%;
+}
+.theme-box2{
+    width: 420px;
+    height: 331.25px;
+    background: rgba(0,0,0,0.2);     
+}
+.theme-box2 img{
+    width:80%;
+    height: 80%;
+    margin: 10%;
+}
+.theme-box3{
+    width: 420px;
+    height: 280px;
+    background: rgba(0,0,0,0.2);     
+}
+.theme-box3 img{
+    width:80%;
+    height: 80%;
+    margin-top: 8%;
+    margin-left: 10%;
+}
+.large-12{
+    margin: 5%;
+}

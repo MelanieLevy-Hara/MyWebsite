@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Popup try</title>
+    <link type="text/css" rel="stylesheet" href="popup.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="spin.js"></script>
+</head>
+
+<script language="javascript" type="text/javascript" >
+	$(document).ready(function(){
+	$('#btn').click(function(){
+		var freezeDiv = document.createElement("div");
+	    freezeDiv.id = "freezeDiv";
+	    freezeDiv.style.cssText = "position:absolute; top:0; right:0; width:" + screen.width + "px; height:" + screen.height + "px; background-color: #000000; opacity:0.5; filter:alpha(opacity=50)";
+    	document.getElementsByTagName("body")[0].appendChild(freezeDiv);
+	var opts = {
+	  lines: 13, // The number of lines to draw
+	  length: 20, // The length of each line
+	  width: 10, // The line thickness
+	  radius: 30, // The radius of the inner circle
+	  corners: 1, // Corner roundness (0..1)
+	  rotate: 0, // The rotation offset
+	  direction: 1, // 1: clockwise, -1: counterclockwise
+	  color: '#000', // #rgb or #rrggbb or array of colors
+	  speed: 1, // Rounds per second
+	  trail: 60, // Afterglow percentage
+	  shadow: false, // Whether to render a shadow
+	  hwaccel: false, // Whether to use hardware acceleration
+	  className: 'spinner', // The CSS class to assign to the spinner
+	  zIndex: 2e9, // The z-index (defaults to 2000000000)
+	  top: '50%', // Top position relative to parent
+	  left: '50%' // Left position relative to parent
+		};
+	var target = document.getElementById('foo');
+	var spinner = new Spinner(opts).spin(target);
+	alert("hello");
+	$('#freezeDiv').remove();
+
+	});
+
+
+
+	$(document).keypress(function(){
+
+	});
+});
+</script>
+
+<body>
+<div id="btn">Pop-up</div>
+<div id="foo">
+</div>
+<input type="text" value=""/>
+
+</body>
+</html>
