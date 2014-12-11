@@ -18,28 +18,51 @@
   myApp.config(function($stateProvider, $urlRouterProvider) {
     //
     // For any unmatched url, redirect to /state1
-    $urlRouterProvider.otherwise("/state1");
+    $urlRouterProvider.otherwise("/home");
     //
     // Now set up the states
     $stateProvider
-      .state('state1', {
-        url: "/state1",
-        templateUrl: "Homepage.html"
+      .state('home', {
+        url: "/home",
+        templateUrl: "templates/Homepage.html"
       })
       
-      .state('state2', {
-        url: "/state2",
-        templateUrl: "AskMe.html"
+      .state('aboutme', {
+        url: "/aboutme",
+        templateUrl: "templates/AskMe.html"
       })
       
-      .state('state3', {
-        url: "/state3",
-        templateUrl: "Resume.html"
+      .state('resume', {
+        url: "/resume",
+        templateUrl: "templates/Resume.html"
       })
 
-      .state('state4', {
-        url: "/state4",
-        templateUrl: "Contact.html"
+      .state('contact', {
+        url: "/contact",
+        templateUrl: "templates/Contact.html"
       })
+      // .state('panel2', {
+      //   url:"/panel2",
+      //   template:
+      //       '<dl class="accordion" data-accordion>
+      //         <dd class="accordion-navigation">
+      //             <a ui-sref="#panel11">Software Developer - Audatex (a Solera Company)</a>
+      //             <div id="panel11" class="content active">
+                      
+      //             </div>
+      //         </dd>
+      //       </dl>'
+      // })
+      // .state('#panel11', {
+      //   url:"/#panel11"
+      //   '<ul>
+      //       <li>Self-learned SQL and PLSQL to understand the company&#39;s data framework</li>
+      //       <li>Learned the Scrum Methodology in a team and used the JIRA website to document progress</li>
+      //       <li>Mapped four large .xml files to an Oracle database using Pentaho</li>
+      //       <li>Ensured ETLs were maintainable, optimized (by 50% runtime) and documented</li>
+      //       <li>Used Ruby on Rails to write software for Audatex&#39;s website</li>
+      //   </ul>'
+      // })
+
   });
 })();

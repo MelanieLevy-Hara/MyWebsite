@@ -20,7 +20,7 @@
         <ul class="title-area">
           <li class="name">
             <h1>
-              <a ui-sref="state1">My Website!</a>
+              <a ui-sref="home">My Website!</a>
             </h1>
           </li>
            <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
@@ -31,19 +31,19 @@
           <!-- Left Nav Section -->
           <ul class="left">
             <li>
-              <a ui-sref="state2">About Me</a>
+              <a ui-sref="aboutme">About Me</a>
             </li>
             <li class="has-dropdown">
-              <a ui-sref="state3">Resume</a>
+              <a href="#">Resume</a>
               <ul class="dropdown">
-                <li><a ui-sref="state3">Qualification Highlights</a></li>
-                <li><a ui-sref="state3">Co-op Positions</a></li>
-                <li><a ui-sref="state3">Leadership Positions</a></li>
-                <li><a ui-sref="state3">Hackathon Projects</a></li>
+                <li><a ui-sref="resume">Qualification Highlights</a></li>
+                <li><a ui-sref="resume">Co-op Positions</a></li>
+                <li><a ui-sref="resume">Leadership Positions</a></li>
+                <li><a ui-sref="resume">Hackathon Projects</a></li>
               </ul>
             </li>
             <li>
-              <a ui-sref="state4">Contact</a>
+              <a ui-sref="contact">Contact</a>
             </li>
           </ul>
         </section>
@@ -53,6 +53,8 @@
     <script type="text/javascript" src="js/AskMe.js"></script>
     <script src="foundation/js/foundation/foundation.js"></script>
     <script src="foundation/js/foundation/foundation.accordion.js"></script>
+    <script src="foundation/js/foundation/foundation.dropdown.js"></script>
+    <script src="foundation/js/foundation/foundation.topbar.js"></script>
     <script>
       $(document).foundation();
     </script>

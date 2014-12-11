@@ -11,7 +11,7 @@
       disabled_class: 'disabled',
       mega_class: 'mega',
       align: 'bottom',
-      is_hover: false,
+      is_hover: true,
       opened: function(){},
       closed: function(){}
     },
