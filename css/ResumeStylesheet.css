@@ -28,31 +28,71 @@ body {
     height:630px;
     background: rgba(0,0,0,0.2);
 }
-.theme-box1 img{
-    width:90%;
-    height: 90%;
-    margin: 5%;
+.theme-box1 div{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+}
+.theme-box1 div img{
+    position: absolute;
+    z-index: 400;
+}
+.theme-box1 div img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.theme-box1 div img:hover{
+    opacity: 0;
+}
+.theme-box1 div p{
+    position:absolute;
+    z-index: 300;
 }
 .theme-box2{
     width: 420px;
     height: 331.25px;
-    background: rgba(0,0,0,0.2);     
+    background: rgba(0,0,0,0.2); 
+}
+.theme-box2 h4{
+    margin-left: 1%;
+    margin-top: 0%;
+    font-family: Elephant;
 }
 .theme-box2 img{
-    width:80%;
+    width: 80%;
     height: 80%;
-    margin: 10%;
+    margin-left: 10%;
+}
+.theme-box2 img:hover{
+    opacity: 0;
 }
 .theme-box3{
     width: 420px;
     height: 280px;
     background: rgba(0,0,0,0.2);     
 }
+.theme-box3 h5{
+    margin-left: 2%;
+    font-family: Elephant;
+    margin-top: 0%;
+}
 .theme-box3 img{
     width:80%;
     height: 80%;
-    margin-top: 8%;
     margin-left: 10%;
+    margin-top: 5%;
+}
+.theme-box3 img:hover{
+    opacity: 0;
+}
+.fadeout{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .large-12{
     margin: 5%;
