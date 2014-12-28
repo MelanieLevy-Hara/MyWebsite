@@ -24,34 +24,38 @@ body {
     background-color:transparent;
 }
 .theme-box1{
-    width:420px;
     height:630px;
     background: rgba(0,0,0,0.2);
 }
-.theme-box1 div{
-    border: 1px solid red;
-    width: 100%;
-    height: 100%;
-    padding: 5%;
+.theme-box1 .panel-syde{
+    width: 90%;
+    height: 90%;
+    font-size: .8em;   
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
 }
-.theme-box1 div img{
+
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+.panel-syde .front {
+    margin: 10%;
     position: absolute;
-    z-index: 400;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    text-align: center;
 }
-.theme-box1 div img{
-    width: 100%;
-    height: 100%;
-    position: relative;
+.panel-syde .back {
+    margin:10%;
+    position: absolute;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
 }
-.theme-box1 div img:hover{
+.panel-syde .front img:hover{
     opacity: 0;
 }
-.theme-box1 div p{
-    position:absolute;
-    z-index: 300;
-}
 .theme-box2{
-    width: 420px;
     height: 331.25px;
     background: rgba(0,0,0,0.2); 
 }
@@ -69,7 +73,6 @@ body {
     opacity: 0;
 }
 .theme-box3{
-    width: 420px;
     height: 280px;
     background: rgba(0,0,0,0.2);     
 }
