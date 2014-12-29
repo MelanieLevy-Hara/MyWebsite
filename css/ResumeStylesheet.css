@@ -2,6 +2,7 @@
     font-family: elephant;
     src: url("../fonts/elephant.ttf");
 }*/
+
 body {
   padding-top: 60px;
   padding-bottom: 40px;
@@ -34,19 +35,23 @@ body {
     -webkit-perspective: 600px;
     -moz-perspective: 600px;
 }
-
+.theme-box1 .panel-syde h4{
+    margin-left: 1%;
+    margin-top: 0%;
+    font-family: Elephant;
+}
 /* -- make sure to declare a default for every property that you want animated -- */
 /* -- general styles, including Y axis rotation -- */
 .panel-syde .front {
-    margin: 10%;
+    margin-left: 10%;
     position: absolute;
     z-index: 900;
     width: inherit;
     height: inherit;
-    text-align: center;
+    text-align: justify;
 }
 .panel-syde .back {
-    margin:10%;
+    margin-left:10%;
     position: absolute;
     z-index: 800;
     width: inherit;
@@ -59,19 +64,40 @@ body {
     height: 331.25px;
     background: rgba(0,0,0,0.2); 
 }
-.theme-box2 h4{
+.theme-box2 .panel-audatex{
+    width: 90%;
+    height: 75%;
+    font-size: .8em;   
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+}
+.theme-box2 .panel-audatex h4{
     margin-left: 1%;
     margin-top: 0%;
     font-family: Elephant;
+    font-size: 1.5em;
 }
-.theme-box2 img{
-    width: 80%;
-    height: 80%;
+.panel-audatex .front {
     margin-left: 10%;
+    margin-top: 0%;
+    position: absolute;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    text-align: justify;
 }
-.theme-box2 img:hover{
+.panel-audatex .back {
+    margin-left:10%;
+    margin-top:0%;
+    position: absolute;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+}
+.panel-audatex .front img:hover{
     opacity: 0;
 }
+
 .theme-box3{
     height: 280px;
     background: rgba(0,0,0,0.2);     
@@ -99,4 +125,17 @@ body {
 }
 .large-12{
     margin: 5%;
+}
+.bold{
+    font-weight: bold;
+}
+.intro{
+    height:647px;
+}
+.logo{
+    height:90%;
+    width: 90%;
+}
+.logo:hover{
+    background: rgba(0,0,0,0.2);
 }

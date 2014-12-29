@@ -39,7 +39,7 @@ body {
   font-size: 100%; }
 
 body {
-  background-image: url("http://ginva.com/wp-content/uploads/2012/02/simple-wallpaper-20.jpg") ;/*url("../../img/bluebackground3.jpg")*/
+  background-image: url("../../img/home/melanie 020.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: #000000;
@@ -1747,7 +1747,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: #333333; }
+  background: (#333333); }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
@@ -1775,7 +1775,7 @@ meta.foundation-mq-topbar {
   height: 60px;
   line-height: 60px;
   position: relative;
-  background: #333333;
+  background: rgba(0,0,0,0.2);
   margin-bottom: 0; 
   text-align: center;
 }
@@ -1857,7 +1857,7 @@ meta.foundation-mq-topbar {
     height: auto;
     background: transparent; }
     .top-bar.expanded .title-area {
-      background: #333333; }
+      background: rgba(0,0,0,0.2); }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a span::after {
@@ -1882,7 +1882,7 @@ meta.foundation-mq-topbar {
     height: 1px;
     width: 100%; }
   .top-bar-section ul li {
-    background: #333333; }
+    background: rgba(0,0,0,0); }
     .top-bar-section ul li > a {
       display: block;
       width: 100%;
@@ -1892,7 +1892,8 @@ meta.foundation-mq-topbar {
       font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1rem;
       font-weight: normal;
-      text-transform: none; }
+      text-transform: none;
+       }
       .top-bar-section ul li > a.button {
         font-size: 0.8125rem;
         padding-right: 15px;
@@ -1980,8 +1981,8 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li > button.warning:hover, .top-bar-section ul li > button.warning:focus {
           color: white; }
     .top-bar-section ul li:hover:not(.has-form) > a {
-      background-color: #555555;
-      background: #272727;
+      background-color: rgba(0,0,0,0.2);
+      background: rgba(0,0,0,0.2);
       color: white; }
     .top-bar-section ul li.active > a {
       background: #68b4d5;
@@ -2065,7 +2066,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 40.063em) {
   .top-bar {
-    background: #333333;
+    background: rgba(0,0,0,0.2);
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -2085,7 +2086,7 @@ meta.foundation-mq-topbar {
       position: relative;
       top: 7px; }
     .top-bar.expanded {
-      background: #333333; }
+      background: rgba(0,0,0,0.2); }
 
   .contain-to-grid .top-bar {
     max-width: 62.5em;
@@ -2104,16 +2105,16 @@ meta.foundation-mq-topbar {
         .top-bar-section ul li .js-generated {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
-      background-color: #555555;
-      background: #272727;
+      background-color: rgba(0,0,0,0);
+      background: rgba(0,0,0,0);
       color: white; }
     .top-bar-section li:not(.has-form) a:not(.button) {
       padding: 0 15px;
       height: 60px;
-      background: #333333; }
+      background: rgba(0,0,0,0); }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
-        background-color: #555555;
-        background: #272727; }
+        background-color: rgba(0,0,0,0);
+        background: rgba(0,0,0,0.2); }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
       padding: 0 15px;
       line-height: 60px;
@@ -2176,17 +2177,17 @@ meta.foundation-mq-topbar {
         line-height: 45px;
         white-space: nowrap;
         padding: 12px 15px;
-        background: #333333; }
+        background: rgba(0,0,0,0.2); }
       .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
         color: white;
-        background: #333333; }
+        background: rgba(0,0,0,0.2); }
       .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         color: white;
-        background-color: #555555;
-        background: #272727; }
+        background-color: rgba(0,0,0,0);
+        background: rgba(0,0,0,0.4); }
       .top-bar-section .dropdown li label {
         white-space: nowrap;
-        background: #333333; }
+        background: rgba(0,0,0,0.2); }
       .top-bar-section .dropdown li .dropdown {
         left: 100%;
         top: 0; }
@@ -2213,8 +2214,8 @@ meta.foundation-mq-topbar {
         left: 100%; }
 
   .no-js .top-bar-section ul li:hover > a {
-    background-color: #555555;
-    background: #272727;
+    background-color: rgba(0,0,0,0);
+    background: rgba(0,0,0,0.2);
     color: white; }
   .no-js .top-bar-section ul li:active > a {
     background: #68b4d5;
