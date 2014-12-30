@@ -41,6 +41,7 @@ body {
 body {
   background-image: url("../../img/home/melanie020.JPG");
   background-size: cover;
+  height:100%;
   background-repeat: no-repeat;
   color: #000000;
   padding: 0;
@@ -4105,10 +4106,8 @@ dialog {
     padding-top: 0; } }
 /* Progress Bar */
 .progress {
-  background-color: #f6f6f6;
+  background-color: rgba(0,0,0,0.2);
   height: 1.5625rem;
-  border: 1px solid white;
-  padding: 0.125rem;
   margin-bottom: 0.625rem; }
   .progress .meter {
     background: #68b4d5;

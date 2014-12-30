@@ -1,17 +1,153 @@
-/*@font-face{
-    font-family: elephant;
-    src: url("../fonts/elephant.ttf");
-}*/
-
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
+@font-face{
+    font-family: Perpetua;
+    src: url("../fonts/perpetua.ttf");
 }
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    height: 0;
+}
+.logo:hover{
+    background: rgba(0,0,0,0.2);
+}
+.intro{
+    height: 100%;
+}
+.intro .hello{
+    margin-top: 275px;
+    padding: 5px;
+    margin-left: 42%;
+}
+.intro .hello .name{
+    font-size: 4rem;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #b4c3ce;
+}
+.top-link{
+    text-align: center;
+    color:#3399cc;
+}
+#aboutme{
+    background-color: #d5e0e0;
+}
+#aboutme h2{
+    margin-top: 0;
+    font-size: 2.75rem;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;;
+    color: #27252C;
+    text-align: center;
+}
+#aboutme .description{
+    font-size: 1.25rem;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;;
+    color: #27252C;
+    text-align: justify;
+    margin-left: 16.5%;
+}
+#future{
+    background-color: #d5e0e0;
+    margin-top: 0;
+}
+#past{
+    background-image: url("../img/greybackground.jpg");
+}
+.row h3{
+    text-align: left;
+    padding-left: 2%;
+}
+.theme-box4{
+    width:333px;
+    height:133px;
+    background: rgba(0,0,0,0.5);
+    border: 5px solid transparent;
+}
+.theme-box4 .panel-th{
+    width: 90%;
+    height: 90%;  
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+}
+
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+.panel-th .front {
+    margin: 5%;
+    position: absolute;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.panel-th.flip .front {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+.panel-th .back {
+    margin:5%;
+    position: absolute;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.panel-th.flip .back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+ .resize{
+    display:block;
+    height: 97%;
+    width: 100%;            
+    text-align: center;
+    position: relative;
+}
+ .panel-th .back div p{
+    color: white; 
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 0.95em;
+    vertical-align: middle;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;;
+ }
+  .panel-th .back div p a{
+    line-height: 1.5em;
+    color: #009CDE;
+ }
 .transparent{
     background-color: transparent;
-    width:780px;
-    height:90px;
-    padding-left:15px;
+    width: 780px;
+    height: 90px;
+    padding-left: 15px;
 }
 .transparent h3{
     color: #68b4d5;
@@ -24,118 +160,51 @@ body {
     width:420px;
     background-color:transparent;
 }
-.theme-box1{
-    height:630px;
-    background: rgba(0,0,0,0.2);
-}
-.theme-box1 .panel-syde{
-    width: 90%;
-    height: 90%;
-    font-size: .8em;   
-    -webkit-perspective: 600px;
-    -moz-perspective: 600px;
-}
-.theme-box1 .panel-syde h4{
-    margin-left: 1%;
-    margin-top: 0%;
-    font-family: Elephant;
-}
-/* -- make sure to declare a default for every property that you want animated -- */
-/* -- general styles, including Y axis rotation -- */
-.panel-syde .front {
-    margin-left: 10%;
-    position: absolute;
-    z-index: 900;
-    width: inherit;
-    height: inherit;
-    text-align: justify;
-}
-.panel-syde .back {
-    margin-left:10%;
-    position: absolute;
-    z-index: 800;
-    width: inherit;
-    height: inherit;
-}
-.panel-syde .front img:hover{
-    opacity: 0;
-}
-.theme-box2{
-    height: 331.25px;
-    background: rgba(0,0,0,0.2); 
-}
-.theme-box2 .panel-audatex{
-    width: 90%;
-    height: 75%;
-    font-size: .8em;   
-    -webkit-perspective: 600px;
-    -moz-perspective: 600px;
-}
-.theme-box2 .panel-audatex h4{
-    margin-left: 1%;
-    margin-top: 0%;
-    font-family: Elephant;
-    font-size: 1.5em;
-}
-.panel-audatex .front {
-    margin-left: 10%;
-    margin-top: 0%;
-    position: absolute;
-    z-index: 900;
-    width: inherit;
-    height: inherit;
-    text-align: justify;
-}
-.panel-audatex .back {
-    margin-left:10%;
-    margin-top:0%;
-    position: absolute;
-    z-index: 800;
-    width: inherit;
-    height: inherit;
-}
-.panel-audatex .front img:hover{
-    opacity: 0;
-}
 
-.theme-box3{
-    height: 280px;
-    background: rgba(0,0,0,0.2);     
-}
-.theme-box3 h5{
-    margin-left: 2%;
-    font-family: Elephant;
-    margin-top: 0%;
-}
-.theme-box3 img{
-    width:80%;
-    height: 80%;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-.theme-box3 img:hover{
-    opacity: 0;
-}
-.fadeout{
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-.large-12{
-    margin: 5%;
-}
 .bold{
     font-weight: bold;
 }
-.intro{
-    height:647px;
+#skills{
+    background-color: #d5e0e0;
+    margin-top: 0;
 }
-.logo{
-    height:90%;
-    width: 90%;
+#skills h2{
+    margin-top: 0;
+    font-size: 2.75rem;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;;
+    color: #27252C;
+    text-align: center;
 }
-.logo:hover{
-    background: rgba(0,0,0,0.2);
+.skill-name{
+    margin-bottom: 0;
+}
+.meter.html{
+    width: 100%;
+}
+.meter.css{
+    width:70%;
+}
+.meter.js{
+    width:50%;
+}
+.meter.jquery{
+    width:60%;
+}
+.meter.angular{
+    width:30%;
+}
+.meter.aspnet{
+    width:75%;
+}
+.meter.ruby{
+    width:40%;
+}
+.meter.cpp{
+    width:90%;
+}
+.meter.excelvba{
+    width:90%;
+}
+.meter.sql{
+    width:50%;
 }
