@@ -10,6 +10,26 @@
     content: " ";
     height: 0;
 }
+.top-link{
+    text-align: center;
+    color:#3399cc;
+
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
 .logo:hover{
     background: rgba(0,0,0,0.2);
 }
@@ -27,10 +47,7 @@
     text-transform: uppercase;
     color: #b4c3ce;
 }
-.top-link{
-    text-align: center;
-    color:#3399cc;
-}
+
 #aboutme{
     background-color: #d5e0e0;
 }
@@ -41,12 +58,30 @@
     color: #27252C;
     text-align: center;
 }
-#aboutme .description{
+#aboutme #future .description{
     font-size: 1.25rem;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;;
     color: #27252C;
     text-align: justify;
     margin-left: 16.5%;
+}
+#aboutme #future .resume{
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+
 }
 #future{
     background-color: #d5e0e0;
@@ -54,6 +89,11 @@
 }
 #past{
     background-image: url("../img/greybackground.jpg");
+    background-size: cover;
+    width:100%;
+}
+.flip-background{
+    background-color: rgba(0,0,0,0.5);
 }
 .row h3{
     text-align: left;
@@ -62,14 +102,15 @@
 .theme-box4{
     width:333px;
     height:133px;
-    background: rgba(0,0,0,0.5);
-    border: 5px solid transparent;
+    box-shadow:none;
 }
 .theme-box4 .panel-th{
     width: 90%;
-    height: 90%;  
+    height: 88%;  
     -webkit-perspective: 600px;
     -moz-perspective: 600px;
+    perspective: 600px;
+    -ms-perspective: 600px;
 }
 
 /* -- make sure to declare a default for every property that you want animated -- */
@@ -87,6 +128,12 @@
     -moz-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
+    -ms-transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform-style: preserve-3d;
+    -ms-backface-visibility: hidden;
+    transform: rotateX(0deg) rotateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
     /* -- transition is the magic sauce for animation -- */
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
@@ -98,6 +145,8 @@
     z-index: 900;
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
 }
 .panel-th .back {
     margin:5%;
@@ -112,6 +161,7 @@
     -moz-transform: rotateY(-180deg);
     -moz-transform-style: preserve-3d;
     -moz-backface-visibility: hidden;
+
     /* -- transition is the magic sauce for animation -- */
     -o-transition: all .4s ease-in-out;
     -ms-transition: all .4s ease-in-out;
@@ -123,10 +173,12 @@
     z-index: 1000;
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg);
 }
  .resize{
     display:block;
-    height: 97%;
+    height: 100%;
     width: 100%;            
     text-align: center;
     position: relative;
@@ -138,29 +190,11 @@
     font-size: 0.95em;
     vertical-align: middle;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;;
- }
+}
   .panel-th .back div p a{
     line-height: 1.5em;
     color: #009CDE;
- }
-.transparent{
-    background-color: transparent;
-    width: 780px;
-    height: 90px;
-    padding-left: 15px;
 }
-.transparent h3{
-    color: #68b4d5;
-    font-family: elephant;
-    font-size: 4em;
-    font-style: italic;
-}
-.transparent2{
-    height:20px;
-    width:420px;
-    background-color:transparent;
-}
-
 .bold{
     font-weight: bold;
 }
@@ -188,16 +222,16 @@
     width:50%;
 }
 .meter.jquery{
-    width:60%;
+    width:70%;
 }
-.meter.angular{
+.meter.angularjs{
     width:30%;
 }
-.meter.aspnet{
-    width:75%;
+.meter.photoshop{
+    width:60%;
 }
-.meter.ruby{
-    width:40%;
+.meter.aspnet{
+    width:70%;
 }
 .meter.cpp{
     width:90%;
@@ -207,4 +241,85 @@
 }
 .meter.sql{
     width:50%;
+}
+.meter p{
+    text-align: right;
+    color: gray;
+    margin-right: 1%;
+}
+#contact{
+    background-image: url("../img/greybackground-contact.jpg");
+    background-size: cover;
+    width:100%;
+    margin-top: 0;
+}
+#contact h2{
+    margin-top: 0;
+    font-size: 2.75rem;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: gray;
+    text-align: center;
+}
+#contact h5{
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: gray;
+    text-align: center;
+}
+#contact .icons{
+        /* Internet Explorer 10 */
+    display:-ms-flexbox;
+    -ms-flex-pack:center;
+    -ms-flex-align:center;
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+    /* Safari, Opera, and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+#contact .icons a img{
+    display: inline-block;
+    width:100px;
+    height:100px;
+}
+.footer{
+    background-color: #27252c;
+    color:white;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    height: 8%;
+    width: 100%;
+}
+.footer p{
+    padding-top: 1%;
+    margin-bottom: 0;
+}
+/*Responsive*/
+@media (max-width: 870px){
+    .medium-4{
+        width:890px;
+    }
+    .hello{
+        display:-ms-flexbox;
+        -ms-flex-pack:center;
+        -ms-flex-align:center;
+        /* Firefox */
+        display:-moz-box;
+        -moz-box-pack:center;
+        -moz-box-align:center;
+        /* Safari, Opera, and Chrome */
+        display:-webkit-box;
+        -webkit-box-pack:center;
+        -webkit-box-align:center;
+        /* W3C */
+        display:box;
+        box-pack:center;
+        box-align:center;
+    }
 }
