@@ -37,9 +37,9 @@
     height: 100%;
 }
 .intro .hello{
-    margin-top: 275px;
+    margin-top: 250px;
     padding: 5px;
-    margin-left: 42%;
+    margin-left: 20%;
 }
 .intro .hello .name{
     font-size: 4rem;
