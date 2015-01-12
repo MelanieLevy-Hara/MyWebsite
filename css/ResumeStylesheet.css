@@ -301,7 +301,7 @@
     margin-bottom: 0;
 }
 /*Responsive*/
-@media (max-width: 870px){
+/*@media (max-width: 870px){
     .medium-4{
         width:890px;
     }
@@ -309,17 +309,17 @@
         display:-ms-flexbox;
         -ms-flex-pack:center;
         -ms-flex-align:center;
-        /* Firefox */
+        /* Firefox 
         display:-moz-box;
         -moz-box-pack:center;
         -moz-box-align:center;
-        /* Safari, Opera, and Chrome */
+        /* Safari, Opera, and Chrome 
         display:-webkit-box;
         -webkit-box-pack:center;
         -webkit-box-align:center;
-        /* W3C */
+        /* W3C 
         display:box;
         box-pack:center;
         box-align:center;
     }
-}
+}*/
