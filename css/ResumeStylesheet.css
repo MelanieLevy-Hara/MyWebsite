@@ -10,6 +10,9 @@
     content: " ";
     height: 0;
 }
+/*#top::before{
+    content: url("../img/home/logo2.png");
+}*/
 .top-link{
     text-align: center;
     color:#3399cc;
