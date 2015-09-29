@@ -39,16 +39,27 @@
 .intro{
     height: 100%;
 }
-.intro .hello{
-    margin-top: 250px;
-    padding: 5px;
-    margin-left: 20%;
+
+.intro .professional-image{
+    background-image: url("../img/background/DSC_0034.JPG");
+    background-size: cover;
+    height:100%;
+    background-position: center top; 
+    background-repeat: no-repeat;
+    margin-top: 0;
 }
-.intro .hello .name{
+
+.intro .professional-image .hello{
+
+    padding: 5px;
+    margin-left: 5%;
+}
+.intro .professional-image .hello .name{
+    margin-top: 300px;
     font-size: 4rem;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     text-transform: uppercase;
-    color: #b4c3ce;
+    color: #ffffff;
 }
 
 #aboutme{
@@ -94,6 +105,9 @@
     background-image: url("../img/greybackground.jpg");
     background-size: cover;
     width:100%;
+}
+#past #hs-exp{
+    margin-top: 15px;
 }
 .flip-background{
     background-color: rgba(0,0,0,0.5);
@@ -215,35 +229,35 @@
 .skill-name{
     margin-bottom: 0;
 }
-.meter.html{
-    width: 100%;
+.meter.cpp{
+    width: 95%;
 }
-.meter.css{
+.meter.excel{
+    width: 95%;
+}
+.meter.swift{
+    width: 80%;
+}
+.meter.html{
     width:70%;
 }
-.meter.js{
+.meter.javascript{
     width:50%;
 }
-.meter.jquery{
-    width:70%;
+.meter.illustrator{
+    width:90%;
 }
-.meter.angularjs{
-    width:30%;
+.meter.powerpoint{
+    width:90%;
 }
 .meter.photoshop{
-    width:60%;
-}
-.meter.aspnet{
     width:70%;
 }
-.meter.cpp{
-    width:90%;
+.meter.balamiq{
+    width:70%;
 }
-.meter.excelvba{
-    width:90%;
-}
-.meter.sql{
-    width:50%;
+.meter.mvc{
+    width:60%;
 }
 .meter p{
     text-align: right;

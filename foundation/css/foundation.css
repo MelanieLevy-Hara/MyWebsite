@@ -39,10 +39,6 @@ body {
   font-size: 100%; }
 
 body {
-  background-image: url("../../img/background/SAM_4666.jpg");
-  background-size: cover;
-  height:100%;
-  background-repeat: no-repeat;
   color: #000000;
   padding: 0;
   margin: 0;
